@@ -15,32 +15,32 @@
         <div class="logo-container">
             <img class="logo" src="/static/img/logo.svg" alt="MonoGuard Logo">
         </div>
-        <div class="content">
-            <div class="form-container">
+        <div class="form-container">
+            <div class="login-container">
                 <div class="login">
                     <span class="login-text">로그인</span>
-                </div>
-
-                <!-- 에러 메시지를 표시할 영역 -->
-                <div id="error-message" style="color: red; font-size: 14px; margin-bottom: 10px;"></div>
-
-                <!-- JavaScript를 통한 로그인 처리 -->
-                <div class="form-group">
-                    <input class="input-box input-label" id="employee-id" name="employee_id" type="text" placeholder="ID(사번)" required>
-                </div>
-                <div class="form-group">
-                    <input class="input-box input-label" id="password" name="password" type="password" placeholder="PW" required>
-                </div>
-                <div class="form-group">
-                    <button class="button-box" type="button" onclick="handleLogin()">
-                        <span class="button-label">로그인</span>
-                    </button>
-                </div>
-
-                <div class="signup" onclick="handleSignUp()">
-                    <span class="signup-text">회원가입하기</span>
+                    <span id="error-message" style="color: red; font-size: 14px; margin-left: 10px;"></span>
                 </div>
             </div>
+        
+            <!-- 로그인 폼 -->
+            <div class="form-group">
+                <input class="input-box input-label" id="employee-id" name="employee_id" type="text" placeholder="ID(사번)" required>
+            </div>
+            <div class="form-group">
+                <input class="input-box input-label" id="password" name="password" type="password" placeholder="PW" required>
+            </div>
+            <div class="form-group">
+                <button class="button-box" type="button" onclick="handleLogin()">
+                    <span class="button-label">로그인</span>
+                </button>
+            </div>
+        
+            <div class="signup" onclick="handleSignUp()">
+                <span class="signup-text">회원가입하기</span>
+            </div>
+        </div>
+        
         </div>
     </div>
 
